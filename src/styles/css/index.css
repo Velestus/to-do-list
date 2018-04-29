@@ -1,0 +1,162 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif; }
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  .App main {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .App main .StickyBoard {
+      width: 1200px;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 14px 16px;
+      background-color: #3B653D;
+      border: 5px solid #966F33;
+      -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1); }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  width: 100%; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-content {
+  font-size: 1.5em;
+  color: white; }
+
+.gradient {
+  background: #ffffff;
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  background: radial-gradient(ellipse at center, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 ); }
+
+.border-shadow, .StickyNote, .StickyNote::before {
+  -webkit-box-shadow: 2px 2px 4px 0px #4d4d4d;
+  -moz-box-shadow: 2px 2px 4px 0px #4d4d4d;
+  box-shadow: 2px 2px 4px 0px #4d4d4d; }
+
+.StickyNote {
+  width: 300px;
+  height: 200px;
+  background-color: #ffcd5a;
+  margin: 10px;
+  padding-bottom: 50px;
+  position: relative; }
+  .StickyNote button {
+    position: absolute;
+    bottom: 28px;
+    right: 32px;
+    color: red;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    transition: opacity 1s linear;
+    cursor: pointer;
+    z-index: 3; }
+  .StickyNote button:hover {
+    opacity: 0.75; }
+  .StickyNote .StickyNote-title {
+    font-family: 'Courgette', sans-serif, cursive;
+    text-align: left;
+    padding-left: 16px;
+    opacity: 0.75; }
+  .StickyNote .StickyNote-message {
+    overflow-wrap: break-word;
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
+
+.StickyNote::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-width: 64px 64px 0 0;
+  border-style: solid;
+  border-color: #ffcd5a #4d4d4d; }
+
+.StickyNote::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+  border-width: 75px 75px 0 0;
+  border-style: solid;
+  border-color: transparent #3B653D;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.InputField {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 14px 16px; }
+  .InputField form > * {
+    margin: 14px 16px;
+    border: 5px solid grey;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif; }
+  .InputField form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 1200px;
+    margin: 14px 16px; }
+    .InputField form input[type=text] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-grow: 1;
+      border: 5px solid white;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: default; }
+    .InputField form input[type=submit] {
+      opacity: 0.5;
+      transition: opacity 1s linear; }
+    .InputField form input[type=submit]:hover {
+      opacity: 1; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+$sticky-color: #ffcd5a;
+$shadow-color: rgba(77,77,77,1);
+.border-shadow {
+    -webkit-box-shadow: 2px 2px 4px 0px $shadow-color;
+    -moz-box-shadow: 2px 2px 4px 0px $shadow-color;
+    box-shadow: 2px 2px 4px 0px $shadow-color;
+}
+
+.StickyNote {
+    width: 300px;
+    height: 200px;
+    background-color: $sticky-color;
+    margin: 10px;
+    padding-bottom: 50px;
+    @extend .border-shadow;
+    position: relative;
+    button {
+        position: absolute;
+        bottom: 28px;
+        right: 32px;
+        color: red;
+        font-size: 1.5em;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        transition:opacity 1s linear;
+        cursor: pointer;
+        z-index: 3;
+    }
+    button:hover {
+        opacity: 0.75; 
+    }
+    .StickyNote-title {
+        font-family: 'Courgette', sans-serif, cursive;
+        text-align: left;
+        padding-left: 16px;
+        opacity: 0.75;
+    }
+    .StickyNote-message {
+        overflow-wrap: break-word;
+   
+        padding-left: 16px;
+        padding-right: 16px;
+        -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+                hyphens: auto;
+    }
+}
+.StickyNote::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-width: 64px 64px 0 0;
+    border-style: solid;
+    border-color: $sticky-color $shadow-color;
+    @extend .border-shadow;
+}
+.StickyNote::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    border-width: 75px 75px 0 0;
+    border-style: solid;
+    border-color: transparent #3B653D; 
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}

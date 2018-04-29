@@ -1,0 +1,29 @@
+{
+  "Todos": [
+    {
+      "message": "Buy a lettuce",
+      "date": "29 April 2018",
+      "id": 1
+    },
+    {
+      "message": "Find new place for board games",
+      "date": "29 April 2018",
+      "id": 2
+    },
+    {
+      "message": "Search for \"You Don't Know JS\" books somewhere to rent or buy",
+      "date": "29 April 2018",
+      "id": 3
+    },
+    {
+      "message": "Buy new paints to continue painting the board game figurines",
+      "date": "29 April 2018",
+      "id": 4
+    },
+    {
+      "message": "Do laundry",
+      "date": "29 April 2018",
+      "id": 5
+    }
+  ]
+}
