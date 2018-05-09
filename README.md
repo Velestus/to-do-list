@@ -2,12 +2,14 @@ To-Do Application
 ===
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
 ![React logo](https://blog-assets.risingstack.com/2016/Jan/react_best_practices-1453211146748.png)
 
 This project was developped with usage of **JSON-Server package**.
 I have also added **Sass watcher** to look for changes in CSS and convert SCSS files into CSS.
 
-This generated little inconvenience - due to used solutions projects needs 3 tasks to run _**correctly**_ during development. _If you want just to take a look at this, you don't need second task_.
+This generated little inconvenience - due to used solutions projects needs 3 tasks to run _**correctly**_ during development. 
+_If you want to just take a look at this project and not modify styling, you don't need second task_.
 
 _First task:_
 `$ json-server --watch db.json`
