@@ -2,7 +2,7 @@ To-Do Application
 ===
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-![React logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png | width=100)
+![React logo](https://blog-assets.risingstack.com/2016/Jan/react_best_practices-1453211146748.png)
 
 This project was developped with usage of **JSON-Server package**.
 I have also added **Sass watcher** to look for changes in CSS and convert SCSS files into CSS.
