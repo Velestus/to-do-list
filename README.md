@@ -1,7 +1,7 @@
 To-Do Application
 ===
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project was bootstrapped with [Create React App].
 
 ![React logo](https://blog-assets.risingstack.com/2016/Jan/react_best_practices-1453211146748.png)
 
